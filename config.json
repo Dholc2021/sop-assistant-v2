@@ -1,0 +1,42 @@
+{
+    "loom": {
+      "videos": [
+        {
+          "id": "1a2b3c4d5e6f",
+          "key": "customer_onboarding",
+          "description": "Customer Onboarding Process"
+        },
+        {
+          "id": "6f5e4d3c2b1a",
+          "key": "refund_process",
+          "description": "Refund and Cancellation Policy"
+        }
+      ]
+    },
+    "trainual": {
+      "subjects": [
+        {
+          "id": 12345,
+          "key": "customer_support",
+          "description": "Customer Support Guidelines"
+        },
+        {
+          "id": 67890,
+          "key": "employee_onboarding",
+          "description": "Employee Onboarding Process"
+        }
+      ]
+    },
+    "local": {
+      "files": [
+        {
+          "path": "./sample-data/sales-process.json",
+          "key": "sales_process",
+          "description": "Sales Process SOP"
+        }
+      ]
+    },
+    "output": {
+      "path": "./public/sop-data.js"
+    }
+  }

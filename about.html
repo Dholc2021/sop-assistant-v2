@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About SOP Assistant</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="home-styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <button class="back-btn" onclick="window.location.href='home.html'">
+          <span><i class="fa-solid fa-arrow-left"></i> Back</span>
+        </button>
+      </div>
+
+      <div class="sidebar-content">
+        <div class="about-nav">
+          <div class="about-nav-item active" data-section="overview">
+            <i class="fa-solid fa-info-circle"></i>
+            <span>Overview</span>
+          </div>
+          <div class="about-nav-item" data-section="capabilities">
+            <i class="fa-solid fa-list-check"></i>
+            <span>Capabilities</span>
+          </div>
+          <div class="about-nav-item" data-section="examples">
+            <i class="fa-solid fa-lightbulb"></i>
+            <span>Example Uses</span>
+          </div>
+          <div class="about-nav-item" data-section="about">
+            <i class="fa-solid fa-user"></i>
+            <span>About Creator</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-footer">
+        <div class="user-info">
+          <i class="fa-solid fa-robot"></i>
+          <span>SOP Assistant</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="chat-header">
+        <div class="chat-title">About SOP Assistant</div>
+      </div>
+
+      <div class="about-container">
+        <!-- Overview Section -->
+        <section class="about-section active" id="overview">
+          <div class="about-card">
+            <div class="assistant-logo">
+              <div class="logo-circle">
+                <i class="fa-solid fa-clipboard-list"></i>
+              </div>
+            </div>
+            
+            <h1 class="assistant-title">SOP Assistant</h1>
+            <p class="assistant-author">By Daniel Holc

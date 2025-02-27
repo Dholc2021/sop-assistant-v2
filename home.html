@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOP Assistant - Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="home-styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <button class="new-chat-btn">
+          <span><i class="fa-solid fa-plus"></i> New chat</span>
+        </button>
+      </div>
+
+      <div class="sidebar-content">
+        <div class="chat-history">
+          <div class="history-heading">History</div>
+          <div class="history-item active">
+            <i class="fa-regular fa-message"></i>
+            <span>SOP Assistant</span>
+          </div>
+          <div class="history-item">
+            <i class="fa-regular fa-message"></i>
+            <span>Customer Onboarding Process</span>
+          </div>
+          <div class="history-item">
+            <i class="fa-regular fa-message"></i>
+            <span>Refund & Cancellation Policy</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-footer">
+        <div class="user-info">
+          <i class="fa-solid fa-robot"></i>
+          <span>SOP Assistant</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="chat-header">
+        <div class="chat-title">SOP Assistant</div>
+      </div>
+
+      <div class="welcome-container">
+        <div class="welcome-content">
+          <div class="assistant-logo">
+            <div class="logo-circle">
+              <i class="fa-solid fa-clipboard-list"></i>
+            </div>
+          </div>
+          
+          <h1 class="assistant-title">SOP Assistant</h1>
+          <p class="assistant-author">By Daniel Holcomb</p>
+          
+          <p class="assistant-description">Bot to assist with SOPs, video transcripts, and Trainual content.</p>
+          
+          <div class="starters-container">
+            <div class="starters-heading">Conversation starters</div>
+            <div class="starters-grid">
+              <div class="starter-box" onclick="window.location.href='index.html?q=How do I process a refund?'">
+                <p>How do I process a refund?</p>
+              </div>
+              <div class="starter-box" onclick="window.location.href='index.html?q=What are the steps for customer onboarding?'">
+                <p>What are the steps for customer onboarding?</p>
+              </div>
+              <div class="starter-box" onclick="window.location.href='index.html?q=How do I handle a high-priority support request?'">
+                <p>How do I handle a high-priority support request?</p>
+              </div>
+              <div class="starter-box" onclick="window.location.href='index.html?q=What should I expect on my first day as a new employee?'">
+                <p>What should I expect on my first day as a new employee?</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="capabilities-container">
+            <div class="capabilities-heading">Capabilities</div>
+            <ul class="capabilities-list">
+              <li>Answers questions based on company SOPs</li>
+              <li>Provides step-by-step procedural guidance</li>
+              <li>References specific SOP documents</li>
+              <li>Suggests helpful follow-up questions</li>
+            </ul>
+          </div>
+          
+          <a href="index.html" class="start-chat-button">
+            Start chat
+          </a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    // Handle click on starter boxes
+    document.querySelectorAll('.starter-box').forEach(box => {
+      box.addEventListener('click', () => {
+        const question = box.querySelector('p').textContent;
+        window.location.href = `index.html?q=${encodeURIComponent(question)}`;
+      });
+    });
+    
+    // Handle click on new chat button
+    document.querySelector('.new-chat-btn').addEventListener('click', () => {
+      window.location.href = 'index.html';
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOP Assistant V2</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <button class="new-chat-btn">
+          <span><i class="fa-solid fa-plus"></i> New chat</span>
+        </button>
+      </div>
+
+      <div class="sidebar-content">
+        <div class="chat-history">
+          <div class="history-heading">History</div>
+          <div class="history-item active">
+            <i class="fa-regular fa-message"></i>
+            <span>Customer Onboarding Process</span>
+          </div>
+          <div class="history-item">
+            <i class="fa-regular fa-message"></i>
+            <span>Refund & Cancellation Policy</span>
+          </div>
+          <div class="history-item">
+            <i class="fa-regular fa-message"></i>
+            <span>Support Request Training</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-footer">
+        <div class="user-info">
+          <i class="fa-solid fa-robot"></i>
+          <span>SOP Assistant V2</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="chat-header">
+        <div class="chat-title">SOP Assistant</div>
+      </div>
+
+      <div class="chat-container">
+        <div class="messages-container" id="messages-container">
+          <!-- Welcome Message -->
+          <div class="message assistant">
+            <div class="avatar">
+              <i class="fa-solid fa-robot"></i>
+            </div>
+            <div class="message-content">
+              <p>Hello! I'm your SOP Assistant. I can help you with information about our Standard Operating Procedures.</p>
+              <p>Here are some topics I can assist you with:</p>
+              <ul>
+                <li>Customer Onboarding Process</li>
+                <li>Refund & Cancellation Procedures</li>
+                <li>Customer Support Guidelines (including high-priority requests)</li>
+                <li>Employee Onboarding Steps</li>
+              </ul>
+              <p>How can I assist you today?</p>
+            </div>
+          </div>
+          
+          <!-- Messages will be added here dynamically -->
+        </div>
+
+        <div class="input-container">
+          <form id="chat-form">
+            <div class="input-wrapper">
+              <input type="text" id="user-input" placeholder="Ask about SOPs..." autocomplete="off">
+              <button type="submit" id="send-button">
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </div>
+          </form>
+          <div class="input-footer">
+            <p>SOP Assistant helps answer questions based on company Standard Operating Procedures.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="sopdata.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

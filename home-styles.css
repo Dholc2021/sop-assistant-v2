@@ -1,0 +1,161 @@
+/* Welcome Screen Specific Styles */
+
+.welcome-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px 20px;
+    overflow-y: auto;
+  }
+  
+  .welcome-content {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .assistant-logo {
+    margin-bottom: 16px;
+  }
+  
+  .logo-circle {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color: #7090b0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: white;
+  }
+  
+  .assistant-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #ffffff;
+  }
+  
+  .assistant-author {
+    font-size: 14px;
+    color: #a0a0a0;
+    margin-bottom: 16px;
+  }
+  
+  .assistant-description {
+    font-size: 16px;
+    color: #d0d0d0;
+    margin-bottom: 32px;
+    max-width: 500px;
+  }
+  
+  .starters-container {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+  
+  .starters-heading {
+    font-size: 16px;
+    font-weight: 600;
+    color: #d0d0d0;
+    margin-bottom: 12px;
+    text-align: left;
+  }
+  
+  .starters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+  }
+  
+  .starter-box {
+    background-color: #2a2a2a;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    padding: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    height: 100%;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .starter-box:hover {
+    background-color: #333333;
+  }
+  
+  .starter-box p {
+    margin: 0;
+    color: #e0e0e0;
+    font-size: 15px;
+    text-align: left;
+  }
+  
+  .capabilities-container {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+  
+  .capabilities-heading {
+    font-size: 16px;
+    font-weight: 600;
+    color: #d0d0d0;
+    margin-bottom: 12px;
+    text-align: left;
+  }
+  
+  .capabilities-list {
+    list-style-type: disc;
+    padding-left: 24px;
+    text-align: left;
+  }
+  
+  .capabilities-list li {
+    color: #c0c0c0;
+    margin-bottom: 8px;
+  }
+  
+  .start-chat-button {
+    background-color: #5656e8;
+    color: white;
+    border: none;
+    border-radius: 24px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-decoration: none;
+    margin-top: 20px;
+    min-width: 200px;
+  }
+  
+  .start-chat-button:hover {
+    background-color: #4646d8;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .starters-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .sidebar {
+      display: none;
+    }
+    
+    .main-content {
+      width: 100%;
+    }
+    
+    .welcome-content {
+      padding: 0 10px;
+    }
+  }
